@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --rich-black: #040A17ff;
+  --delft-blue: #192D4Bff;
+  --light-blue: #A5D0E1ff;
+  --yinmn-blue: #315273ff;
+  --oxford-blue: #0A152Aff;
+}
+
+
+/* All the styles in the css file will be arranged in ascending order based on the catergory */
+
+.nav{
+  display: flex;
+  color: var(--light-blue);
+  justify-content: space-between;
+}
+.nav .logo{
+  margin: 1rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+.nav ul{
+  font-size: 1.1rem;
+  display: flex;
+  list-style: none;
+}
+.nav ul li{
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.video-background{
+  width: 100%;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-background .background-main{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.map-overlay-inputs .map-overlay-trip{
+  position: absolute;
+  background: transparent;
+  top: 60px;
+  left: 50;
+  z-index: 99;
+  margin-left: 5rem;
+  padding: 1rem;
+  width: auto;
+  margin-top: 1rem;
+  display: flex;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
